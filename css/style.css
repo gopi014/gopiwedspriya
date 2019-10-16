@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  background:rgba(239, 123, 123, 0.3);
   padding: 30px;
   width: 100%;
   float: left;
@@ -652,7 +652,6 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 10px 1%;
   list-style: none;
   min-height: 400px;
-  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   float: left;
@@ -829,6 +828,13 @@ form label {
   display: table-cell !important;
   vertical-align: middle;
 }
+@media screen and (max-width: 480px) {
+  #fh5co-header .display-tc,
+  #fh5co-counter .display-tc,
+  .fh5co-cover .display-tc  {
+    vertical-align: bottom;
+  }
+}
 #fh5co-header .display-tc h1, #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h1,
 #fh5co-counter .display-tc h2,
@@ -940,8 +946,8 @@ form label {
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 4.4em;
+  height: 4.4em;
   background: rgba(241, 78, 149, 0.8);
   margin: 0 4px;
   -webkit-border-radius: 50%;
@@ -950,6 +956,7 @@ form label {
   border-radius: 50%;
   position: relative;
   animation: pulse 1s ease infinite;
+  line-height: 24px;
 }
 
 @keyframes pulse {
@@ -967,8 +974,8 @@ form label {
   /* countdown block inner div */
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
-  width: 100px;
+  height: 4.4em;
+  width: 4.4em;
 }
 
 .simply-countdown > .simply-section .simply-amount,
@@ -979,7 +986,7 @@ form label {
 }
 
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 30px;
+  font-size: 20px;
   /* amounts */
 }
 
@@ -1092,8 +1099,8 @@ form label {
     height: 140px;
   }
   .couple-half .groom img, .couple-half .bride img {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     margin: 0 auto;
   }
 }
